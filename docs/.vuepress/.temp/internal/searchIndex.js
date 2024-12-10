@@ -39,7 +39,7 @@ export const searchIndex = [
   {
     "title": "",
     "headers": [],
-    "path": "/guide/course/",
+    "path": "/guide/diary/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -53,7 +53,21 @@ export const searchIndex = [
   {
     "title": "",
     "headers": [],
-    "path": "/guide/diary/",
+    "path": "/guide/project/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/guide/course/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/guide/software/",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -212,20 +226,6 @@ export const searchIndex = [
   {
     "title": "",
     "headers": [],
-    "path": "/guide/project/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
-    "path": "/guide/software/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "",
-    "headers": [],
     "path": "/guide/summarize/",
     "pathLocale": "/",
     "extraFields": []
@@ -238,16 +238,3 @@ export const searchIndex = [
     "extraFields": []
   }
 ]
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateSearchIndex) {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ searchIndex }) => {
-    __VUE_HMR_RUNTIME__.updateSearchIndex(searchIndex)
-  })
-}
